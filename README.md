@@ -31,8 +31,17 @@ Here are some tags and how you use them
 </html> 
 ```
 Git:
+<<<<<<< HEAD
 git add = adds something to be saved
 git commit -m '' = Save work with message.
 git status = shows whats been add and what hasn't.
 git diff = shows whats been changed since last save.
 git push origin master (or git push -u origin master) = Pushes everything to remote repository.
+=======
+git add = adds things to be saved
+git commit -m '' = Saves changes with message
+git status = shows whats been added and what hasn't
+git push origin master (or git push -u origin master) = pushes everything to remote repository
+git clone (repository address) = clones repository to computer.
+git pull origin master = pulls everything down from repository (once cloned)
+>>>>>>> a09fc19d2148ffc2bc20e512494df99b3d6c176c
