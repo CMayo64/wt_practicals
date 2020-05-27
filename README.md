@@ -31,7 +31,8 @@ Here are some tags and how you use them
 </html> 
 ```
 Git:
+git add = adds something to be saved
 git commit -m '' = Save work with message.
-git status = shows what saved and whats not.
+git status = shows whats been add and what hasn't.
 git diff = shows whats been changed since last save.
 git push origin master (or git push -u origin master) = Pushes everything to remote repository.
