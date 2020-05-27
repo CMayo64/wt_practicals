@@ -30,3 +30,8 @@ Here are some tags and how you use them
    </body>
 </html> 
 ```
+Git:
+git commit -m '' = Save work with message.
+git status = shows what saved and whats not.
+git diff = shows whats been changed since last save.
+git push origin master (or git push -u origin master) = Pushes everything to remote repository.
