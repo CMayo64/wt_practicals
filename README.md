@@ -50,7 +50,8 @@ For exameple;
 HTML <div> Tag:
 Defines division or section in HTML document.
 Used to group elements to format them with styles.
-For example;
+Can also use some other more descriptive tags, e.g <article></article>
+Example of div tag in code;
 <body>
    <div id="wrapper">
       <div id="header">
@@ -79,7 +80,7 @@ id specifies unique id for an HTML element, can only be used once. e.g, <element
 CSS:
 Stands for Cascading Style Sheets.
 Define how to display HTML elements.
-Two main parts: a selectoe and one or more delcarations, e.g; h1 {colot:blue; font-size:12px;}
+Two main parts: a selector and one or more delcarations, e.g; h1 {color:blue; font-size:12px;}
 Proper example;
 body {
       font-family: Tahoma, Arial, sans-serif;
@@ -111,6 +112,43 @@ id selectors -
       font-size: 10px;
            }
 
+media queries:
+Need to make sure viewport is representitative of device width. So we use viewport meta tag; <meta name="viewport" content="width=device=width,initial-scale=1">.
+Example of media query; 
+@media (query) {
+   /* place rules in here */
+}
+Bigger example;
+body {
+   background-color:green;
+}
+
+@media(max-width:500px){
+   body{
+      background-color:yellow;
+   }
+}
+
+Common devices e.g,
+ /* Large Devices, Wide Screens */
+    @media (max-width : 1200px) {
+    }
+
+     /* Medium Devices, Desktops */
+    @media (max-width : 992px) {
+    }
+
+     /* Small Devices, Tablets */
+    @media (max-width : 768px) {
+    }
+
+       /* Extra Small Devices, Phones */ 
+    @media (max-width : 480px) {
+    }
+ 
+   /* Custom, iPhone Retina */ 
+    @media (max-width : 320px) {
+    }
 git add = adds something to be saved
 git commit -m '' = Save work with message.
 git status = shows whats been add and what hasn't.
