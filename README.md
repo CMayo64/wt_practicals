@@ -51,6 +51,7 @@ HTML <div> Tag:
 Defines division or section in HTML document.
 Used to group elements to format them with styles.
 Can also use some other more descriptive tags, e.g <article></article>
+<nav></nav>
 Example of div tag in code;
 <body>
    <div id="wrapper">
@@ -112,7 +113,11 @@ id selectors -
       font-size: 10px;
            }
 
-media queries:
+Breakpoint - The point at which wensite changes layouth based on width of viewport.
+
+Viewport - What you are viewing the website therough, e.g Iphone 4, Ipad pro, Pixel 2 etc.
+
+Media Queries:
 Need to make sure viewport is representitative of device width. So we use viewport meta tag; <meta name="viewport" content="width=device=width,initial-scale=1">.
 Example of media query; 
 @media (query) {
@@ -149,6 +154,8 @@ Common devices e.g,
    /* Custom, iPhone Retina */ 
     @media (max-width : 320px) {
     }
+
+Git:
 git add = adds something to be saved
 git commit -m '' = Save work with message.
 git status = shows whats been add and what hasn't.

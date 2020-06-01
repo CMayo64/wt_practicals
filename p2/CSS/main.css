@@ -48,3 +48,29 @@ article {
     width: 30%;
     float: left;
 }
+
+@media (max-width: 700px) {
+    h1 {
+        color: green;
+    }
+    article {
+        width: 100%;
+        padding-left: 0%;
+        padding-right: 0%;
+        margin-left: 0%;
+        margin-right: 0%;
+
+    }
+    .thin {
+        width: 100%;
+        text-align: left;
+    }
+
+    nav ul  li {
+        display: block;
+        margin-right: 0%;
+    }
+    nav {
+        display: none;
+    }
+}
