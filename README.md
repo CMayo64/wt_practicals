@@ -61,7 +61,7 @@ For example;
       </div> <! - - [end]#section - ->
       <div id="footer">
       ....
-      </div><!- - [end]#footer - ->
+      </div><!- - [end]#footer - -> (this is an HTML comment)
    </div> <!- -[end]#content - ->
 </body>
 
