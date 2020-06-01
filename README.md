@@ -30,18 +30,89 @@ Here are some tags and how you use them
    </body>
 </html> 
 ```
-Git:
-<<<<<<< HEAD
+Block code (HTML):
+Form a separate block of HTML.
+Can be contained within other block elements.
+Takes up entire contents of its containter.
+Apart from p element, they can contain other block elements.
+For example;
+<p>....</p>
+<h1>....</h1>
+<table>....</table>
+
+Inline elements:
+Stay in line with rest of content.
+Can only contain other inline elements, but may be contained by both inline and block elements.
+For exameple; 
+<img>....</img>
+<a>....</a>
+
+HTML <div> Tag:
+Defines division or section in HTML document.
+Used to group elements to format them with styles.
+For example;
+<body>
+   <div id="wrapper">
+      <div id="header">
+      ....
+      </div> <! - - [end]#header - ->
+      <div id="section">
+         ....
+      </div> <! - - [end]#section - ->
+      <div id="footer">
+      ....
+      </div><!- - [end]#footer - ->
+   </div> <!- -[end]#content - ->
+</body>
+
+HTML <span> Tag:
+Provides way to add a hook to piece of text or part of document.
+Difference between span and div is span element is inline and often used for small section of HTML, whereas div element use to group larger chunks of code.
+For example;
+<p>She has <span class="blue">light blue</span> eyes.</p> 
+
+class and id Attributes:
+class specifies element as member of one or more classes allow developers to define specific kinds of a given element. e.g, <element class="classname">
+
+id specifies unique id for an HTML element, can only be used once. e.g, <element id="id">
+
+CSS:
+Stands for Cascading Style Sheets.
+Define how to display HTML elements.
+Two main parts: a selectoe and one or more delcarations, e.g; h1 {colot:blue; font-size:12px;}
+Proper example;
+body {
+      font-family: Tahoma, Arial, sans-serif;
+      color: black;
+      background-color: white;
+      margin: 8px;
+     }
+
+Selectors:
+Element selectors -
+   - Name of an HTML element, e.g 
+   p {
+      color: red;
+     }
+   - Grouping selectors together same style applies to    all elements, e.g 
+   h1 - 6 {
+           color: grey;
+          }
+
+class selectors -
+   "." followed by value of class e.g, 
+   .section {
+      font-size: 20px;
+            }
+
+id selectors - 
+   "#" followed by id name, e.g 
+   #footer {
+      font-size: 10px;
+           }
+
 git add = adds something to be saved
 git commit -m '' = Save work with message.
 git status = shows whats been add and what hasn't.
 git diff = shows whats been changed since last save.
 git push origin master (or git push -u origin master) = Pushes everything to remote repository.
-=======
-git add = adds things to be saved
-git commit -m '' = Saves changes with message
-git status = shows whats been added and what hasn't
-git push origin master (or git push -u origin master) = pushes everything to remote repository
-git clone (repository address) = clones repository to computer.
-git pull origin master = pulls everything down from repository (once cloned)
->>>>>>> a09fc19d2148ffc2bc20e512494df99b3d6c176c
