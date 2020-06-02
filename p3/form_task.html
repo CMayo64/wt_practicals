@@ -3,36 +3,49 @@
     <head>
         <title>HTML - Form </title>
         <meta charset="utf-8">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="form_css.css">
         <meta name="description" content="Session 8 form task">
     </head>
     <body>
         <!-- This is a large un-styled form -->
         <h1> Travel Survey</h1>
-        <form>
+        <form id="travel_info">
         
         <!-- Personal Information  -->
+         <fieldset>
+             <legend> Name </legend>
             <p></p>
             <label> First Name(*): </label> <input type="text" name="first_name">
-            <label> Last Name(*):   </label> <input type="text" name="last_name">
-            
-        <!-- Contact Information -->   
             <p></p>
+            <label> Last Name(*):   </label> <input type="text" name="last_name">
+        </fieldset>
+        <!-- Contact Information --> 
+        <p></p>  
+        <fieldset> 
+            <legend> Contact Information </legend>
             <label> Address Line 1(*): </label> <input type="text" name="address_1" required>
-            
+            <p></p>
             <label>Post Code(*) </label> <input type="text" name="post_code">
             <p></p>
             <label>Phone Number1(*) </label> <input type="text" name="phone1">
-          
+            <p></p>
             <label>Phone Number2</label><input type="text" name="phone2">
             <p></p>
             <label> Email(*): </label> <input type="text" name="address_1">
+        </fieldset>
             
         <!-- Travel  Information --> 
+        <fieldset> 
+            <legend> Travel Information </legend>
             <p></p>
             <label> How do you normally travel to university?</label>
-            
+            <p></p>
             <input type="radio" name="tasport_method" value="drive"> Drive
+            <p></p>
             <input type="radio" name="tasport_method" value="public"> Public transport
+            <p></p>
             <input type="radio" name="tasport_method" value="public"> Walk
             
             <p></p>
@@ -43,16 +56,19 @@
                 <option value="30">20 - 30 mins</option>
                 <option value="30+">30 mins +</option>
             </select>
-            
-        <!--  Declaration  -->     
+        </fieldset>  
+        <!--  Declaration  -->        
             <p></p>
+        <fieldset> 
+            <legend> Declaration </legend>
             <label> Are you happy for us to email you</label>
                 <input type="radio" name="yes" value="yes"> Yes
                 <input type="radio" name="no" value="no">No
-        
+        </fieldset>
         <!-- Submit button -->   
             <p></p>         
             <input type="submit">    
+        
         </form>
     </body>
 </html>

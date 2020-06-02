@@ -1,0 +1,17 @@
+#travel_info {
+    width: 500px;
+    text-align: center;
+}
+
+#travel_info[type="text"] {
+    float:right;
+}
+
+input:invalid {
+    border: solid red;
+}
+
+input:valid {
+    border: solid green;
+}
+
