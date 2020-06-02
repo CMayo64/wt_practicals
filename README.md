@@ -7,10 +7,10 @@ Here are some tags and how you use them
 <!doctype html> 
 <html> (Says its html 5 code)
    <head> (Header)
-            <title> Page title (User doesnt see this)</title>
+            <title>Page title</title> (User doesnt see this)
    </head>
    <body> (What the user Actually sees)
-      <center> (puts enclosed img in the center)
+      <center> (puts enclosed image in the center)
          <img src="images/fake_cv_pic.png" alt="picture for charlie's cv"> (Puts an image on the page)
       <h1> Heading 1 (User see's this) </h1>
       </center>
@@ -78,6 +78,101 @@ class specifies element as member of one or more classes allow developers to def
 
 id specifies unique id for an HTML element, can only be used once. e.g, <element id="id">
 
+HTML FORMS:
+
+form tag:
+Container for controls (i.e, text field, checkbox, radio buttons etc.).
+e.g;
+<form></form>
+Using form with action and method;
+action - Where form sent to 
+method - specifies how form sent;
+   get - data appended to URL.
+   post - data included in body of form.
+Example;
+<form action ="http://www.google.com" method="post">
+
+</form>
+
+input tag: 
+Handles most form controls.
+Example;
+<form action="http://www.google.com" method="post">
+    <p> <label for="name">Name:</label> <input type="text" name="name"> </p>
+    <p> <label for="email">Email:</label> <input type="text" name="email"> </p>
+    <p><input type="submit" name="Submit" value="Submit"></p>
+</form>
+
+In above code there two different types of <input>, text and submit <inputs> have name attribute, important as tied to inputted user value (what the user types in). <inputs> can have value assigned to them.
+
+<lable>'s specialists form elements used for marking form controls. Not how have for attribute typing them to specific input.
+inputs and lables wrapped in <p> tags, considered good practice.
+
+Further form inputs:
+Radio buttons let user select ONE choice, Excellent, Good or Bad in this case. Example;
+<label for="rating">  Please enter rating   </label>
+  <p><input type="radio" name="rating" value="excellent"> Excellent </p>
+  <p> <input type="radio" name="rating" value="good"> Good </p>
+  <p><input type="radio" name="rating" value="bad"> Bad </p>
+
+
+Checkbox allows users to select multiple choices, in this instance user can select ipad, tv and video if wants to.
+Example;
+<label for="rating"> What device do you use  </label>
+  <p><input type="checkbox" name="rating" value="ipad"> Ipad</p>
+  <p><input type="checkbox" name="rating" value="tv"> TV </p>
+  <p><input type="checkbox" name="rating" value="video"> Video </p>
+
+
+Drop Down List's allow user to select one option from a list, in ths case Volvo or Saab or Audi etc. They are created using the <select></select> tags. Example;
+<select id="cars" name="car">
+  <option value="">  Select Car </option>
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select
+
+Text Area, used for multiple lines of input. Attributes rows and cols specify size. Example;
+<label  for="suggestion"> Enter a suggestion </label>
+<textarea name="suggestions" rows="5" cols="25">
+my suggestions are:
+</textarea>
+
+Can use required operator in order to specify required field. Example;
+<input type="text" name="Name" required>
+Could use further input types to restrict user choice.
+Examples of HTML5 input types;
+- color
+- date
+- datetime
+- month
+- search
+- tel
+- time
+- week
+
+<fieldset>....</fieldset> tag used to group common elements together. Example;
+<fieldset>
+          <label> First Name </label> <input type = "text" name="firstName">
+          <label> Last Name </label> <input type  = "text" name="lastName">
+</fieldset>
+
+Can use <legend>....</legend> element to add title to <fieldset>. Example;
+<fieldset>
+     <legend> Name </legend>
+         <label> First Name: </label> <input type = "text" name="firstName">
+         <label> Last Name: </label> <input type  = "text" name="lastName">
+ </fieldset>
+
+Input and lable elements are inline, so need wrap them in block level element to make them sit on own line. W3C reccomend wrap in <p> tags to create new lines. Example; 
+<fieldset>
+    <legend> Name </legend>
+   <p> <label> First Name: </label> <input type = "text" name="firstName"> </p>
+   <p><label> Last Name: </label> <input type  = "text" name="lastName"> </p>
+</fieldset>
+
+ 
 CSS:
 Stands for Cascading Style Sheets.
 Define how to display HTML elements.
