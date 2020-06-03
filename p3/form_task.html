@@ -9,7 +9,6 @@
         <meta name="description" content="Session 8 form task">
     </head>
     <body>
-        <!-- This is a large un-styled form -->
         <h1> Travel Survey</h1>
         <form id="travel_info">
         
@@ -17,23 +16,24 @@
          <fieldset>
              <legend> Name </legend>
             <p></p>
-            <label> First Name(*): </label> <input type="text" name="first_name">
+            <label> First Name(*): </label> <input type="text" name="first_name" required>
             <p></p>
-            <label> Last Name(*):   </label> <input type="text" name="last_name">
+            <label> Last Name(*):   </label> <input type="text" name="last_name" required>
         </fieldset>
+
         <!-- Contact Information --> 
         <p></p>  
         <fieldset> 
             <legend> Contact Information </legend>
             <label> Address Line 1(*): </label> <input type="text" name="address_1" required>
             <p></p>
-            <label>Post Code(*) </label> <input type="text" name="post_code">
+            <label> Post Code(*): </label> <input type="text" name="post_code" required>
             <p></p>
-            <label>Phone Number1(*) </label> <input type="text" name="phone1">
+            <label> Phone Number1(*): </label> <input type="tel" name="phone1" required>
             <p></p>
-            <label>Phone Number2</label><input type="text" name="phone2">
+            <label> Phone Number2": </label><input type="tel" name="phone2">
             <p></p>
-            <label> Email(*): </label> <input type="text" name="address_1">
+            <label> Email(*): </label> <input type="email" name="address_1" required>
         </fieldset>
             
         <!-- Travel  Information --> 
@@ -42,12 +42,11 @@
             <p></p>
             <label> How do you normally travel to university?</label>
             <p></p>
-            <input type="radio" name="tasport_method" value="drive"> Drive
+            <input type="radio" name="transport_method" value="drive"> Drive
             <p></p>
-            <input type="radio" name="tasport_method" value="public"> Public transport
+            <input type="radio" name="transport_method" value="public"> Public transport
             <p></p>
-            <input type="radio" name="tasport_method" value="public"> Walk
-            
+            <input type="radio" name="transport_method" value="public"> Walk
             <p></p>
             <label> How long does it take you to travel in? </label>
             <select name="travel_time">
@@ -57,6 +56,7 @@
                 <option value="30+">30 mins +</option>
             </select>
         </fieldset>  
+
         <!--  Declaration  -->        
             <p></p>
         <fieldset> 
@@ -65,10 +65,10 @@
                 <input type="radio" name="yes" value="yes"> Yes
                 <input type="radio" name="no" value="no">No
         </fieldset>
+
         <!-- Submit button -->   
             <p></p>         
-            <input type="submit">    
-        
+            <input type="submit">   
         </form>
     </body>
 </html>
