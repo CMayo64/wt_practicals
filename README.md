@@ -172,7 +172,6 @@ Input and lable elements are inline, so need wrap them in block level element to
    <p><label> Last Name: </label> <input type  = "text" name="lastName"> </p>
 </fieldset>
 
- 
 CSS:
 Stands for Cascading Style Sheets.
 Define how to display HTML elements.
@@ -250,6 +249,26 @@ Common devices e.g,
     @media (max-width : 320px) {
     }
 
+#id {
+   border-radius: 4px; (sets the radius of the border to 4 pixels).
+   background-color: grey; (sets the colour of the background to grey (can use other colours)).
+   border: solid 2px black; (Makes the border a solid line (not dotted or lined. Sets the border width to 2 pixles and makes it black).
+   display: block; (displays element as block instead of inline element).
+   display: inline; (displays element as inline instead of block element).
+   height: 40%; (sets the height of the entire item to 40% (can be done in pixels)).
+   margin: 50%; (sets the thickeness of margin area (can also be in pixels). If left is empty same as right. Same for top and bottom to 50%).
+   margin-right: 50%; (sets the value of the margin area to the right to 50%).
+   margin-left: 50%; (sets the value of the margin area to the left to 50%).
+   max-width: 700px; (sets the maximum width of the item (often used with @media)).
+   font-size: 12px; (sets the size of the text to 4 pixels).
+   font-family: Arial, Helvetica, sans-serif; (sets the font family to Arial, then if can't do arial Helvetica then sans-serif).
+   float: left; (floats the text to the left (can use right or center instead)).
+   padding: 0% 1% 1% 10% (sets the thickness of the padding area. If left is empty, it is the same as right. Same for top and bottom).
+   padding-left: 45%; (sets the thickness of the left side padding area to 45% (can also be in pixels)).
+   padding-right: 45%; (sets the thickness of the left side padding area to 45% (can also be in pixels)).
+   text-align: center; (aligns the items text to the center (can also use left, right etc.)).
+   width: 50%; (sets the width of the entire id section (not just text) to 50% (can also be done in pixels)).
+}
 Git:
 git add = adds something to be saved
 git commit -m '' = Save work with message.
