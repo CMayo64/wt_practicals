@@ -269,9 +269,32 @@ Common devices e.g,
    text-align: center; (aligns the items text to the center (can also use left, right etc.)).
    width: 50%; (sets the width of the entire id section (not just text) to 50% (can also be done in pixels)).
 }
+
 Git:
 git add = adds something to be saved
 git commit -m '' = Save work with message.
 git status = shows whats been add and what hasn't.
 git diff = shows whats been changed since last save.
 git push origin master (or git push -u origin master) = Pushes everything to remote repository.
+
+Javascript:
+Comments -
+/* text = this is a block comment, and can
+*/        be written accross multiple lines
+
+//text = this is an inline comment, and only takes up one line.
+
+Variables -
+Variable are assigned like so;
+var myNumber = 42; - This is a number variable (42)
+
+var myString = "bar"; - This is a string variable (bar)
+
+var myBoolean = True; - This is a boolean variable (true)
+
+Maths;
+var x = 5;
+var y = 20;
+var result = x + y; - Result would be 25.
+var result = x * y; - Result would be 100.
+var result = x/y; - Result would be 5
