@@ -298,3 +298,12 @@ var y = 20;
 var result = x + y; - Result would be 25.
 var result = x * y; - Result would be 100.
 var result = x/y; - Result would be 5
+
+JavaScript Events: 
+onchange = When an HTML element has been changed, e.g a form as been updated.
+onclick = When the user clicks the HTML element.
+onmouseover = When user moves the mouse over an HTML element.
+onmouseout = When user moves the mouse away from an HTML element.
+onkeydown = When usesr pushes keybord key
+onload = When page or section (body, header etc.) loads.
+input = Fires any time user types into an input box.
