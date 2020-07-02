@@ -1,0 +1,66 @@
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    margin-left: 10px;
+    width: 70%;
+}
+nav {
+    padding: 0% 1% 1% 1%;
+}
+
+nav ul {
+    margin: 0 auto;
+    width: 50%;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 9%;
+}
+
+#content
+{
+    float: left;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#top_para {
+    width: 40%;
+    border: groove 2px;
+    margin-left: 5px;
+    box-shadow: 5px 10px #888888;
+}
+
+#hello {
+    color: tomato;
+}
+
+#download {
+    background-color: rgb(20, 180, 20);
+    color: white;
+    margin-right:513px;
+    margin-bottom: 100px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+#inApp {
+    color: tomato;
+    margin-right: 130px;
+    margin-bottom: 0%;
+}
+
+article {
+    width: 30%;
+    float: left;
+    text-align: center;
+    border: groove 2px;
+    margin-left: 10px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    box-shadow: 5px 10px #888888;
+}
+

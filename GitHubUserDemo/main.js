@@ -1,13 +1,15 @@
 
 async function getUserData() {
-    
+
+    window.alert.document.querySelector('#name');
+    debugger;
     const user = await fetch('https://api.github.com/users/CMayo64');
     const userData = await user.json();
     document.querySelector('#avatar').setAttribute('src', userData.avatar_url);
     document.querySelector('#info').innerHTML = `<strong> Bio: </strong> ${userData.bio} <strong> Followers: </strong> ${userData.followers}`
-    document.querySelector('#name').innerHTML = 
+    
 }
-
+  
 window.addEventListener('DOMContentLoaded', () => {
     getUserData();
 })
