@@ -8,7 +8,7 @@ server.on("request", (req, res) => {
     console.log(url);
     console.log(headers);
 
-    res.end("hello world"):
+    res.end("hello world");
 });
 
 server.listen(8080);
