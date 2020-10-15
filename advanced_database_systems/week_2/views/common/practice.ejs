@@ -1,3 +1,3 @@
 let ejs = require('ejs');
-let people = ['Tom', 'Nial', 'John'];
-let html = ejs.render('<%= people.lion(","); %>', {people: people});
+let people = ['geddy', 'neil', 'alex'];
+let html = ejs.render('<%= people.join(", "); %>', {people: people});
